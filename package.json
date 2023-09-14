@@ -1,0 +1,22 @@
+{
+  "name": "cypress-ui-automation",
+  "version": "1.0.0",
+  "description": "Cypress UI test Automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhirajapp/Cypress-UI-Automation.git"
+  },
+  "author": "@Dhiraj Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhirajapp/Cypress-UI-Automation/issues"
+  },
+  "homepage": "https://github.com/dhirajapp/Cypress-UI-Automation#readme",
+  "devDependencies": {
+    "cypress": "^13.2.0"
+  }
+}
