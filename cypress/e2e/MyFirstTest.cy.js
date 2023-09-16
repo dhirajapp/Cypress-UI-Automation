@@ -1,12 +1,14 @@
 describe('My First Test', () => {
-  it('positive scenario', () => {
+  it('Launch Browser', () => {
     cy.visit('https://automationexercise.com/')
     cy.title().should('eq','Automation Exercise')
   })
 
-  it('Negative scenario', () => {
+  it('Home page', () => {
     cy.visit('https://automationexercise.com/')
-    cy.title().should('eq','Manual Exercise')
+    cy.get("i.fa fa-home").click()
+    cy.title().should('eq','Automation Exercise')
+    cy.get(".col-sm-6").contains("Automation")
   })
 
 })
