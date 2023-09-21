@@ -11,7 +11,33 @@ describe('Login', () => {
       cy.xpath("//input[@placeholder='Password']").should('have.value','admin123')
       cy.xpath("//button[normalize-space()='Login']").click()
       cy.url().should('eq','https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index')
-      
-      
-    })
+           .and('include','dashboard')
+           .and('contain','index.php/dashboard/index')
+
+           let expName='Collings';
+           let  actualName='Paul Collings';
+           cy.get(".oxd-userdropdown-name").then( (x)=>{
+
+            let actName=x.text();
+
+            // BDD Style
+
+            expect(actName).to.equal(actualName)
+            expect(actName).to.not.equal(expName)
+
+
+            //  TDD Style
+
+            assert.equal(actName,actualName)
+            assert.notEqual(actName,expName)
+
+
+
+
+
+
+           })
+
+
+        })
 })
