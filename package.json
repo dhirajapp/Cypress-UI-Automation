@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/dhirajapp/Cypress-UI-Automation#readme",
   "devDependencies": {
-    "cypress": "^13.2.0"
+    "cypress": "^13.2.0",
+    "cypress-xpath": "^2.0.1"
   }
 }
